@@ -1,4 +1,4 @@
-// Vencord 40f6258
+// Vencord 32631e9
 // Standalone: false
 // Platform: darwin
 // Updater Disabled: false
