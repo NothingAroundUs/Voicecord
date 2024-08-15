@@ -16,7 +16,6 @@ A powerful client-side modification tool for Discord that allows users to custom
     - [Plugins](#plugins)
   - [Usage](#usage)
   - [Creating Plugins](#creating-plugins)
-- [Contributing](#contributing)
 - [License](#license)
 - [Features Coming Soon](#features-coming-soon)
 
@@ -61,6 +60,7 @@ The next part relies on your OS to build correctly (MAKE SURE YOU ARE USING THE 
 
 ### MacOS
 <h3> Installation: </h3>
+
   1. Open a terminal and point it to the `Documents` folder:
       ```
       cd Documents
@@ -185,15 +185,82 @@ knowledge of the following:
 
 - Basic react knowledge (if you want to do anything with ui)
 
-# Contributing
+<h3>Plugin Setup</h3>
 
-Contributions are welcome! Follow these steps:
+First, decide whether you want to use the `src/plugins` or `src/userplugins folder`.
 
-1. Fork the repository.
-2. Create a new branch (git checkout -b feature/new-feature).
-3. Commit your changes (git commit -m 'Add a new feature').
-4. Push to the branch (git push origin feature/new-feature).
-5. Open a pull request.
+<h3>Plugin Structure</h3>
+
+There are 3 special files you can create here:
+
+- Index.ts(x):
+  
+    Your plugin’s entry point. This is where most of your plugin’s code will live and where you define things like its name and description.
+
+    Code in this file runs in the browser, so you can use all browser APIs here.
+
+    Node.js APIs like `fs` or `child_process` are not available here. If you need them, you can do so in the `native.ts` file.
+
+- ReadMe.md:
+
+    Markdown documentation for your plugin. This file should contain a description of your plugin and instructions how to use it. Screenshots, videos or gifs are highly recommended. This will be used to generate a custom webpage for your plugin.
+
+- Native.ts:
+
+    Your plugin’s native entry point. This code will run inside NodeJS instead of the browser. You can use all Node.JS apis here, such as `fs` or `child_process`.
+
+    Browser APIs are not available here. If you need them, you can do so in the `index.ts` file.
+
+<h3>Plugin Boilerplate</h3>
+
+1. Start creating your plugin by adding an `index.ts` file inside your plugin’s folder.
+2. Past this into the `index.ts` file to prepare it with our template
+    ```typescript
+    import { Devs } from "@utils/constants";
+    import definePlugin from "@utils/types";
+
+    export default definePlugin({
+        name: "name",
+        description: "description",
+        authors: [Devs.author],
+    });
+    ```
+3. Fill out the `name` and `description` fields in the `definePlugin` call.
+    ```ts "MyCoolPlugin" "I am very cute!"
+        export default definePlugin({
+            name: "MyCoolPlugin", //<<<<<
+            description: "I am very cute!", //<<<<<
+            authors: [Devs.author],
+        });
+    ```
+4. For the authors property, how you do this will depend on whether you’re making a plugin or a userplugin.
+   - Plugin:
+        ```ts ins="Devs.YourName"
+        export default definePlugin({
+            name: "MyCoolPlugin",
+            description: "I am very cute!",
+            authors: [Devs.YourName], //<<<<<
+        });
+        ```
+    - Userplugin:
+        ```ts ins="{ name: \"Your Name\", id: 1234567890n }"
+        export default definePlugin({
+            name: "MyCoolPlugin",
+            description: "I am very cute!",
+            authors: [{ name: "Your Name", id: 1234567890n }], //<<<<<
+        });
+        ```
+5. Save your file and it should automatically format it and insert the following license header on the top.
+    ```ts
+    /*
+    * Voicecord, a Discord client mod
+    * Copyright (c) 2024 Hussein Taha and contributors*
+    * SPDX-License-Identifier: GPL-3.0-or-later
+    */
+    ```
+    If you want, you can change it from `Hussein Taha and contributors` to your own name. But this is not strictly necessary, you own the code either way (and are already included in the “contributors” part).
+
+This is all of the boilerplate needed for a Voicecord plugin. You can now start making your plugin!
 
 # License
 
