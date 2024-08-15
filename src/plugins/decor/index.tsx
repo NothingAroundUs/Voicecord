@@ -1,5 +1,5 @@
 /*
- * Vencord, a Discord client mod
+ * Voicecord, a Discord client mod
  * Copyright (c) 2023 Vendicated, FieryFlames and contributors
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
@@ -27,7 +27,7 @@ export interface AvatarDecoration {
 export default definePlugin({
     name: "Decor",
     description: "Create and use your own custom avatar decorations, or pick your favorite from the presets.",
-    authors: [Devs.FieryFlames],
+    authors: [Devs.nau],
     patches: [
         // Patch MediaResolver to return correct URL for Decor avatar decorations
         {

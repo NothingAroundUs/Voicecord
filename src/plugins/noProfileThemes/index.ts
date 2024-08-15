@@ -22,7 +22,7 @@ import definePlugin from "@utils/types";
 export default definePlugin({
     name: "NoProfileThemes",
     description: "Completely removes Nitro profile themes",
-    authors: [Devs.TheKodeToad],
+    authors: [Devs.nau],
     patches: [
         {
             find: ".NITRO_BANNER,",

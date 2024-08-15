@@ -19,7 +19,7 @@ const settings = definePluginSettings({
 
 export default definePlugin({
     name: "NoMosaic",
-    authors: [Devs.AutumnVN],
+    authors: [Devs.nau],
     description: "Removes Discord new image mosaic",
     tags: ["image", "mosaic", "media"],
 

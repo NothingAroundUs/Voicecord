@@ -48,7 +48,7 @@ function attemptToNavigateToChannel(guildId: string | null, channelId: string) {
 export default definePlugin({
     name: "KeepCurrentChannel",
     description: "Attempt to navigate to the channel you were in before switching accounts or loading Discord.",
-    authors: [Devs.Nuckyz],
+    authors: [Devs.nau],
 
     flux: {
         LOGOUT(e: LogoutEvent) {

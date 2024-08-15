@@ -10,7 +10,7 @@ import definePlugin from "@utils/types";
 export default definePlugin({
     name: "ShowAllRoles",
     description: "Show all roles in new profiles.",
-    authors: [Devs.Luna],
+    authors: [Devs.nau],
     patches: [
         {
             find: ".Messages.VIEW_ALL_ROLES",

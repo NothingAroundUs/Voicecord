@@ -73,7 +73,7 @@ function createTagCommand(tag: Tag) {
 export default definePlugin({
     name: "MessageTags",
     description: "Allows you to save messages and to use them with a simple command.",
-    authors: [Devs.Luna],
+    authors: [Devs.nau],
     options: {
         clyde: {
             name: "Clyde message on send",

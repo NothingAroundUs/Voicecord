@@ -75,7 +75,7 @@ function sendMessage(channelId, message) {
 export default definePlugin({
     name: "SpotifyShareCommands",
     description: "Share your current Spotify track, album or artist via slash command (/track, /album, /artist)",
-    authors: [Devs.katlyn],
+    authors: [Devs.nau],
     dependencies: ["CommandsAPI"],
     commands: [
         {

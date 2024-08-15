@@ -23,7 +23,7 @@ import { Clipboard, Toasts } from "@webpack/common";
 
 export default definePlugin({
     name: "BetterRoleDot",
-    authors: [Devs.Ven, Devs.AutumnVN],
+    authors: [Devs.nau],
     description:
         "Copy role colour on RoleDot (accessibility setting) click. Also allows using both RoleDot and coloured names simultaneously",
 

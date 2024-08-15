@@ -22,7 +22,7 @@ const section = findLazy((m: any) => m.section !== void 0 && m.heading !== void 
 export default definePlugin({
     name: "FriendsSince",
     description: "Shows when you became friends with someone in the user popout",
-    authors: [Devs.Elvyra, Devs.Antti],
+    authors: [Devs.nau],
     patches: [
         // User popup - old layout
         {

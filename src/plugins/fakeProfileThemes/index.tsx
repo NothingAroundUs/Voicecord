@@ -1,5 +1,5 @@
 /*
- * Vencord, a modification for Discord's desktop app
+ * Voicecord, a modification for Discord's desktop app
  * Copyright (c) 2023 Vendicated and contributors
  *
  * This program is free software: you can redistribute it and/or modify
@@ -116,7 +116,7 @@ const requireColorPicker = extractAndLoadChunksLazy(["USER_SETTINGS_PROFILE_COLO
 export default definePlugin({
     name: "FakeProfileThemes",
     description: "Allows profile theming by hiding the colors in your bio thanks to invisible 3y3 encoding",
-    authors: [Devs.Alyxia, Devs.Remty],
+    authors: [Devs.nau],
     patches: [
         {
             find: "UserProfileStore",

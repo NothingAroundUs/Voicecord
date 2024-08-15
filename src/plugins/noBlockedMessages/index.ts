@@ -28,7 +28,7 @@ const RelationshipStore = findByPropsLazy("getRelationships", "isBlocked");
 export default definePlugin({
     name: "NoBlockedMessages",
     description: "Hides all blocked messages from chat completely.",
-    authors: [Devs.rushii, Devs.Samu],
+    authors: [Devs.nau],
     patches: [
         {
             find: "Messages.BLOCKED_MESSAGES_HIDE",

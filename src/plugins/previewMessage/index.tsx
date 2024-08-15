@@ -120,7 +120,7 @@ const PreviewButton: ChatBarButton = ({ isMainChat, isEmpty, type: { attachments
 export default definePlugin({
     name: "PreviewMessage",
     description: "Lets you preview your message before sending it.",
-    authors: [Devs.Aria],
+    authors: [Devs.nau],
     dependencies: ["ChatInputButtonAPI"],
     // start early to ensure we're the first plugin to add our button
     // This makes the popping in less awkward

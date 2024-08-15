@@ -68,7 +68,7 @@ const messageContextMenuPatch: NavContextMenuPatchCallback = (children, { messag
 export default definePlugin({
     name: "SearchReply",
     description: "Adds a reply button to search results",
-    authors: [Devs.Aria],
+    authors: [Devs.nau],
     contextMenus: {
         "message": messageContextMenuPatch
     }

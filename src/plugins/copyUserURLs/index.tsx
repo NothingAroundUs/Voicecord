@@ -44,7 +44,7 @@ const UserContextMenuPatch: NavContextMenuPatchCallback = (children, { user }: U
 
 export default definePlugin({
     name: "CopyUserURLs",
-    authors: [Devs.castdrian],
+    authors: [Devs.nau],
     description: "Adds a 'Copy User URL' option to the user context menu.",
     contextMenus: {
         "user-context": UserContextMenuPatch

@@ -25,7 +25,7 @@ let ERROR_CODES: any;
 export default definePlugin({
     name: "ReactErrorDecoder",
     description: 'Replaces "Minifed React Error" with the actual error.',
-    authors: [Devs.Cyn, Devs.maisymoe],
+    authors: [Devs.nau],
     patches: [
         {
             find: '"https://reactjs.org/docs/error-decoder.html?invariant="',

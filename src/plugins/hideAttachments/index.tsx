@@ -37,7 +37,7 @@ const saveHiddenMessages = (ids: Set<string>) => set(KEY, ids);
 export default definePlugin({
     name: "HideAttachments",
     description: "Hide attachments and Embeds for individual messages via hover button",
-    authors: [Devs.Ven],
+    authors: [Devs.nau],
     dependencies: ["MessagePopoverAPI"],
 
     async start() {

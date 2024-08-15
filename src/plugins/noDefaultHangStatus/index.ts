@@ -10,7 +10,7 @@ import definePlugin from "@utils/types";
 export default definePlugin({
     name: "NoDefaultHangStatus",
     description: "Disable the default hang status when joining voice channels",
-    authors: [Devs.D3SOX],
+    authors: [Devs.nau],
 
     patches: [
         {

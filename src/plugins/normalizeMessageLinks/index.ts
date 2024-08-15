@@ -10,7 +10,7 @@ import definePlugin from "@utils/types";
 export default definePlugin({
     name: "NormalizeMessageLinks",
     description: "Strip canary/ptb from message links",
-    authors: [Devs.bb010g],
+    authors: [Devs.nau],
     patches: [
         {
             find: ".Messages.COPY_MESSAGE_LINK,",

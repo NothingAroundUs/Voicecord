@@ -131,9 +131,9 @@ function ToolboxFragmentWrapper({ children }: { children: ReactNode[]; }) {
 }
 
 export default definePlugin({
-    name: "VencordToolbox",
+    name: "VoicecordToolbox",
     description: "Adds a button next to the inbox button in the channel header that houses Vencord quick actions",
-    authors: [Devs.Ven, Devs.AutumnVN],
+    authors: [Devs.nau],
 
     patches: [
         {

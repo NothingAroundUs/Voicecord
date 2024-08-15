@@ -37,7 +37,7 @@ function findChannelId(message: any): string | null {
 export default definePlugin({
     name: "AutomodContext",
     description: "Allows you to jump to the messages surrounding an automod hit.",
-    authors: [Devs.JohnyTheCarrot],
+    authors: [Devs.nau],
 
     patches: [
         {

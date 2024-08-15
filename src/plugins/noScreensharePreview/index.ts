@@ -22,7 +22,7 @@ import definePlugin from "@utils/types";
 export default definePlugin({
     name: "NoScreensharePreview",
     description: "Disables screenshare previews from being sent.",
-    authors: [Devs.Nuckyz],
+    authors: [Devs.nau],
     patches: [
         {
             find: '"ApplicationStreamPreviewUploadManager"',

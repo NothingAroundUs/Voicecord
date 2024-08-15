@@ -169,7 +169,7 @@ function loadAndCacheShortcut(key: string, val: any, forceLoad: boolean) {
 export default definePlugin({
     name: "ConsoleShortcuts",
     description: "Adds shorter Aliases for many things on the window. Run `shortcutList` for a list.",
-    authors: [Devs.Ven],
+    authors: [Devs.nau],
 
     startAt: StartAt.Init,
     start() {

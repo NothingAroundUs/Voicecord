@@ -24,7 +24,7 @@ import { ChannelStore, PermissionsBits, PermissionStore } from "@webpack/common"
 
 export default definePlugin({
     name: "QuickMention",
-    authors: [Devs.kemo],
+    authors: [Devs.nau],
     description: "Adds a quick mention button to the message actions bar",
     dependencies: ["MessagePopoverAPI"],
 

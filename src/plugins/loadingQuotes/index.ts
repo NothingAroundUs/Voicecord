@@ -56,7 +56,7 @@ const settings = definePluginSettings({
 export default definePlugin({
     name: "LoadingQuotes",
     description: "Replace Discords loading quotes",
-    authors: [Devs.Ven, Devs.KraXen72, Devs.UlyssesZhan],
+    authors: [Devs.nau],
 
     settings,
 

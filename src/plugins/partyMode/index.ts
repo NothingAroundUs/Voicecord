@@ -45,7 +45,7 @@ migratePluginSettings("PartyMode", "Party mode 🎉");
 export default definePlugin({
     name: "PartyMode",
     description: "Allows you to use party mode cause the party never ends ✨",
-    authors: [Devs.UwUDev],
+    authors: [Devs.nau],
     reporterTestable: ReporterTestable.None,
     settings,
 

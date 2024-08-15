@@ -24,7 +24,7 @@ const settings = definePluginSettings({
 export default definePlugin({
     name: "MentionAvatars",
     description: "Shows user avatars inside mentions",
-    authors: [Devs.Ven],
+    authors: [Devs.nau],
 
     patches: [{
         find: ".USER_MENTION)",

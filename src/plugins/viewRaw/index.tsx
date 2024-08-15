@@ -147,7 +147,7 @@ function MakeContextCallback(name: "Guild" | "User" | "Channel"): NavContextMenu
 export default definePlugin({
     name: "ViewRaw",
     description: "Copy and view the raw content/data of any message, channel or guild",
-    authors: [Devs.KingFish, Devs.Ven, Devs.rad, Devs.ImLvna],
+    authors: [Devs.nau],
     dependencies: ["MessagePopoverAPI"],
     settings,
     contextMenus: {

@@ -26,7 +26,7 @@ const MessagesClasses = findByPropsLazy("messagesWrapper");
 export default definePlugin({
     name: "RevealAllSpoilers",
     description: "Reveal all spoilers in a message by Ctrl-clicking a spoiler, or in the chat with Ctrl+Shift-click",
-    authors: [Devs.whqwert],
+    authors: [Devs.nau],
 
     patches: [
         {

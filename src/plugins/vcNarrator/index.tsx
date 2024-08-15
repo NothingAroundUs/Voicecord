@@ -154,7 +154,7 @@ function playSample(tempSettings: any, type: string) {
 export default definePlugin({
     name: "VcNarrator",
     description: "Announces when users join, leave, or move voice channels via narrator",
-    authors: [Devs.Ven],
+    authors: [Devs.nau],
     reporterTestable: ReporterTestable.None,
 
     flux: {

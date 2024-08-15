@@ -92,7 +92,7 @@ function handleGuildUpdate() {
 export default definePlugin({
     name: "ServerListIndicators",
     description: "Add online friend count or server count in the server list",
-    authors: [Devs.dzshn],
+    authors: [Devs.nau],
     dependencies: ["ServerListAPI"],
 
     options: {

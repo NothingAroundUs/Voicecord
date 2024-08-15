@@ -159,7 +159,7 @@ const ChatBarIcon: ChatBarButton = ({ isMainChat }) => {
 export default definePlugin({
     name: "SendTimestamps",
     description: "Send timestamps easily via chat box button & text shortcuts. Read the extended description!",
-    authors: [Devs.Ven, Devs.Tyler, Devs.Grzesiek11],
+    authors: [Devs.nau],
     dependencies: ["MessageEventsAPI", "ChatInputButtonAPI"],
 
     settings,
