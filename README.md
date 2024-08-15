@@ -125,7 +125,7 @@ Open your Voicecord folder. Inside it, you should find a folder called `src`. Th
 
 <h3>Creating the `userplugins` folder</h3>
 
-All official plugins are stored in the `src/plugins` folder. However, unless you plan to [submit your plugin]() to the official repository, you should not put your plugin there, as you will run into conflicts.
+All official plugins are stored in the `src/plugins` folder. However, unless you plan to [submit your plugin](#features-coming-soon) to the official repository, you should not put your plugin there, as you will run into conflicts.
 
 Instead, you will want to use the `src/userplugins` folder. This folder is reserved for custom / private plugins.
 
