@@ -24,7 +24,7 @@ import { dirname, join } from "path";
 import { Readable } from "stream";
 import { finished } from "stream/promises";
 import { fileURLToPath } from "url";
-const BASE_URL = "https://github.com/NothingAroundUs/voicecordInstaller/releases/latest/download/";
+const BASE_URL = "https://github.com/NothingAroundUs/voicecordInstaller/releases/download/latest/";
 const INSTALLER_PATH_DARWIN = "Voicecord.app/Contents/MacOS/Voicecord";
 
 const BASE_DIR = join(dirname(fileURLToPath(import.meta.url)), "..");
@@ -52,13 +52,13 @@ async function ensureBinary() {
 
     const downloadName = join(FILE_DIR, filename);
     const outputFile = process.platform === "darwin"
-        ? join(FILE_DIR, "VencordInstaller")
+        ? join(FILE_DIR, "Voicecord")
         : downloadName;
 
     const etag = existsSync(outputFile) && existsSync(ETAG_FILE)
         ? readFileSync(ETAG_FILE, "utf-8")
         : null;
-
+    console.log(BASE_URL + filename);
     const res = await fetch(BASE_URL + filename, {
         headers: {
             "User-Agent": "Voicecord (https://github.com/NothingAroundUs/Voicecord)",
