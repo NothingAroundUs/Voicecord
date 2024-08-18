@@ -337,7 +337,7 @@
             "download_count": 68368,
             "created_at": "2024-08-17T04:31:56Z",
             "updated_at": "2024-08-17T04:31:56Z",
-            "browser_download_url": "hhttps://github.com/NothingAroundUs/Voicecord/releases/download/v0.05-beta/renderer.css.map"
+            "browser_download_url": "https://github.com/NothingAroundUs/Voicecord/releases/download/v0.05-beta/renderer.css.map"
         },
         {
             "url": "https://api.github.com/repos/Vendicated/Vencord/releases/assets/186510368",
@@ -779,7 +779,7 @@
             "download_count": 15963,
             "created_at": "2024-08-17T04:31:57Z",
             "updated_at": "2024-08-17T04:31:58Z",
-            "browser_download_url": "hhttps://github.com/NothingAroundUs/Voicecord/releases/download/v0.05-beta/vencordDesktopRenderer.js.map"
+            "browser_download_url": "https://github.com/NothingAroundUs/Voicecord/releases/download/v0.05-beta/vencordDesktopRenderer.js.map"
         }
     ],
     "tarball_url": "https://api.github.com/repos/Vendicated/Vencord/tarball/devbuild",
