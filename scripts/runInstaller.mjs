@@ -24,9 +24,8 @@ import { dirname, join } from "path";
 import { Readable } from "stream";
 import { finished } from "stream/promises";
 import { fileURLToPath } from "url";
-
-const BASE_URL = "https://github.com/Vencord/Installer/releases/latest/download/";
-const INSTALLER_PATH_DARWIN = "VoicecordInstaller.app/Contents/MacOS/VencordInstaller";
+const BASE_URL = "https://github.com/NothingAroundUs/voicecordInstaller/releases/latest/download/";
+const INSTALLER_PATH_DARWIN = "Voicecord.app/Contents/MacOS/Voicecord";
 
 const BASE_DIR = join(dirname(fileURLToPath(import.meta.url)), "..");
 const FILE_DIR = join(BASE_DIR, "dist", "Installer");
@@ -35,11 +34,11 @@ const ETAG_FILE = join(FILE_DIR, "etag.txt");
 function getFilename() {
     switch (process.platform) {
         case "win32":
-            return "VencordInstallerCli.exe";
+            return "Voicecord.exe";
         case "darwin":
-            return "VencordInstaller.MacOS.zip";
+            return "Voicecord.MacOS.zip";
         case "linux":
-            return "VencordInstallerCli-linux";
+            return "Voicecord-linux";
         default:
             throw new Error("Unsupported platform: " + process.platform);
     }
@@ -62,7 +61,7 @@ async function ensureBinary() {
 
     const res = await fetch(BASE_URL + filename, {
         headers: {
-            "User-Agent": "Vencord (https://github.com/Vendicated/Vencord)",
+            "User-Agent": "Voicecord (https://github.com/NothingAroundUs/Voicecord)",
             "If-None-Match": etag
         }
     });
