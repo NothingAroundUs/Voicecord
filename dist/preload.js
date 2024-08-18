@@ -1,4 +1,4 @@
-// Vencord 32631e9
+// Vencord e5966b3
 // Standalone: false
 // Platform: darwin
 // Updater Disabled: false
