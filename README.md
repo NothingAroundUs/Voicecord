@@ -9,9 +9,6 @@ A powerful client-side modification tool for Discord that allows users to custom
   - [Disclaimer](#disclaimer)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
-    - [Windows](#windows)
-    - [MacOS](#macos)
-    - [Linux](#linux)
   - [Configuration](#configuration)
     - [Plugins](#plugins)
   - [Usage](#usage)
@@ -55,10 +52,6 @@ pnpm --version
 
 The next part relies on your OS to build correctly (MAKE SURE YOU ARE USING THE CORRECT OS COMMANDS).
 
-### Windows
-    No support Yet.
-
-### MacOS
 <h3> Installation: </h3>
 
   1. Open a terminal and point it to the `Documents` folder:
@@ -103,9 +96,6 @@ If this happens, you should run the same command once again to update the instal
         ```
         pnpm inject
         ```
-
-### Linux
-    No support Yet.
 
 ## Configuration
 
