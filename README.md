@@ -1,9 +1,9 @@
-# Voicevord - Discord Client Modifier
+# Voicecord - Discord Client Modifier
 
 A powerful client-side modification tool for Discord that allows users to customize and enhance the Discord experience. This modifier provides the ability to add custom themes, plugins, and tweak Discord's behavior beyond the native functionality.
 
 ## Table of Contents
-- [Voicevord - Discord Client Modifier](#voicevord---discord-client-modifier)
+- [Voicecord - Discord Client Modifier](#Voicecord---discord-client-modifier)
   - [Table of Contents](#table-of-contents)
   - [Features](#features)
   - [Disclaimer](#disclaimer)
@@ -61,12 +61,12 @@ The next part relies on your OS to build correctly (MAKE SURE YOU ARE USING THE 
 
   2. Clone the Voicecord repository:
      ```
-     git clone https://github.com/NothingAroundUs/Voicevord.git
+     git clone https://github.com/NothingAroundUs/Voicecord.git
      ````
 
   3. Finally point your terminal to the newly created Voicecord folder:
      ```
-     cd Voicevord
+     cd Voicecord
      ```
 <h3>Installing Dependencies: </h3>
 
